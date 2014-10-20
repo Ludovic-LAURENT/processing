@@ -12,7 +12,7 @@ void draw()
 {
   frameRate(10);
   
-  // Varaibla position
+  // Variable position
 
 
 
@@ -25,11 +25,16 @@ void draw()
     if (key == 'a') {
       float xforme = random(640);
 float yforme = random(480);
+float radSec = 360 / 60 * second();
+rotate(radians(radSec));
       ellipse(xforme,yforme,90,90);
+      
     }
     else if (key == 'z') {
             float xforme = random(640);
 float yforme = random(480);
+float radSec = 360 / 60 * second();
+rotate(radians(radSec));
       rect(xforme,yforme,90,90);
     }
   }
